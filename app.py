@@ -5,7 +5,7 @@ from s3 import s3_upload
 
 
 app = Flask(__name__)
-app.config.from_object(".github/workflows/deploy-aws.yml")
+app.config.from_object("config")
 
 class UploadForm(FlaskForm):
     example = FileField("Example File")
