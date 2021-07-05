@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo cp etc/rc.local /etc/
+./run.sh
+
 # Configurar o caminho para o Virtualenv
 VIRTUALENV=/home/ubuntu/venv
 
