@@ -18,4 +18,5 @@ def s3_upload(source_file):
         Key=source_filename,
         Body=source_file.data
     )
+    s3 = session.resource('s3')
     return source_filename
